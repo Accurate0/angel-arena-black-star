@@ -10,7 +10,7 @@ end)
 
 function StatsClient:FetchPreGameData()
 	local data = {
-		matchid = tostring(GameRules:GetMatchID()),
+		matchid = tostring(GameRules:Script_GetMatchID()),
 		players = {},
 	}
 	for i = 0, DOTA_MAX_TEAM_PLAYERS-1 do

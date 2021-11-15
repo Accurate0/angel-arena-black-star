@@ -121,12 +121,15 @@ function FillHeroesTable(heroList, panel, big) {
     var HeroCard = $.CreatePanel('Panel', StatPanel, 'HeroListPanel_element_' + heroName);
     HeroCard.BLoadLayoutSnippet('HeroCard');
     HeroCard.FindChildTraverse('HeroImage').SetImage(TransformTextureToPath(heroName, 'portrait'));
-    if (heroData.isChanged) {
-      HeroCard.FindChildTraverse('HeroChangedBurstRoot').BCreateChildren(
-        '<DOTAScenePanel map="scenes/hud/levelupburst" hittest="false" />',
-      );
-      HeroCard.AddClass('IsChanged');
-    }
+
+    // not sure why broken or what it does
+    // if (heroData.isChanged) {
+    //   HeroCard.FindChildTraverse('HeroChangedBurstRoot').BCreateChildren(
+    //     '<DOTAScenePanel map="scenes/hud/levelupburst" hittest="false" />',
+    //   );
+    //   HeroCard.AddClass('IsChanged');
+    // }
+
     if (heroData.linkedColorGroup) {
       HeroCard.AddClass('HasLinkedColorGroup');
       HeroCard.FindChildTraverse('LinkedHeroesGroupRow').style.backgroundColor =

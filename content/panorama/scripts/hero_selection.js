@@ -256,15 +256,15 @@ function OnLocalPlayerPicked() {
   $('#HeroPreviewLore').text = tryLocalize(`${heroName}_bio`) || '';
   $('#HeroPreviewOverview').text = tryLocalize(`${heroName}_hype`) || '';
 
-  var model = localHeroData.model;
-  var heroImageXML =
-    '<DOTAScenePanel particleonly="false" ' +
-    (localHeroData.useCustomScene
-      ? `map="scenes/heroes" camera="${heroName}" />`
-      : `allowrotation="true" unit="${model}" />`);
-  var ScenePanel = $('#HeroPreviewScene');
-  ScenePanel.RemoveAndDeleteChildren();
-  ScenePanel.BCreateChildren(heroImageXML);
+  // var model = localHeroData.model;
+  // var heroImageXML =
+  //   '<DOTAScenePanel particleonly="false" ' +
+  //   (localHeroData.useCustomScene
+  //     ? `map="scenes/heroes" camera="${heroName}" />`
+  //     : `allowrotation="true" unit="${model}" />`);
+  // var ScenePanel = $('#HeroPreviewScene');
+  // ScenePanel.RemoveAndDeleteChildren();
+  // ScenePanel.BCreateChildren(heroImageXML);
 
   $('#HeroPreviewAbilities').RemoveAndDeleteChildren();
   FillAbilitiesUI($('#HeroPreviewAbilities'), localHeroData.abilities, 'HeroPreviewAbility');

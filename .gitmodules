@@ -1,0 +1,3 @@
+[submodule "deps/find-steam-app"]
+	path = deps/find-steam-app
+	url = https://github.com/Accurate0/find-steam-app.git
