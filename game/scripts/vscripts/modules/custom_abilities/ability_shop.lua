@@ -38,16 +38,16 @@ function CustomAbilities:OnAbilityBuy(PlayerID, abilityname)
 			hero:RemoveAbility("ability_empty")
 			GameMode:PrecacheUnitQueueed(abilityInfo.hero)
 
-			local a = self:AddNewAbility(abilityname)
+			local a = hero:AddNewAbility(abilityname)
 			a:SetLevel(1)
 			for _,link in ipairs(LINKED_ABILITIES[abilityname] or {}) do
-				local linkedAbility = self:AddNewAbility(link)
+				local linkedAbility = hero:AddNewAbility(link)
 				if linkedAbility:GetAbilityName() == "phoenix_launch_fire_spirit" then
 					linkedAbility:SetLevel(1)
 				end
 			end
 
-			hero:CalculateStatBonus()
+			hero:CalculateStatBonus(true)
 			CustomGameEventManager:Send_ServerToPlayer(PlayerResource:GetPlayer(PlayerID), "dota_ability_changed", {})
 		end
 	end
