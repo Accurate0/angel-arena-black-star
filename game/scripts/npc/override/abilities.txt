@@ -637,6 +637,58 @@
 		}
 	}
 
+	"drow_ranger_multishot"
+	{
+		"MaxLevel" "7"
+		"AbilityCooldown" "28 26 24 22 20 18 16"
+		"AbilityManaCost"  "50 70 90 110 130 150 170"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"wave_count"				"3"
+				"LinkedSpecialBonus"		"special_bonus_unique_drow_ranger_8"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"arrow_count_per_wave"		"4"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"arrow_damage_pct"			"85 110 135 160"
+				"LinkedSpecialBonus"		"special_bonus_unique_drow_ranger_1"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"arrow_slow_duration"		"1.0 1.5 2.0 2.5 3.0 3.5 4.0"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"arrow_width"				"90"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"arrow_speed"				"1200"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"arrow_range_multiplier"	"2"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"arrow_angle"				"50"
+			}
+		}
+	}
+
 	"drow_ranger_wave_of_silence"
 	{
 		"MaxLevel"	"7"
@@ -4107,6 +4159,64 @@
 		}
 	}
 
+	"tiny_tree_grab"
+	{
+		"MaxLevel" 	"7"
+		"AbilityCooldown"                  	"20 18 16 14 12 10 8"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"attack_count"				"5"
+				"LinkedSpecialBonus"		"special_bonus_unique_tiny_6"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_damage"				"20"
+				"LinkedSpecialBonus"		"special_bonus_unique_tiny_7"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"bonus_damage_buildings"		"70 100 130 160 190 210 240"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"attack_range"				"350"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"splash_width"				"200"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"splash_range"				"400"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"splash_pct"				"40 50 60 70 80 90 100"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"bat_increase"				"0.0"
+			}
+			"09"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"speed_reduction"			"0"
+			}
+		}
+	}
+
 	"tiny_toss_tree"
 	{
 		"MaxLevel"						"7"
@@ -6579,10 +6689,10 @@
 
 	"beastmaster_call_of_the_wild"
 	{
-		"MaxLevel"	"4"
-		"AbilityCastPoint"	"0.3 0.25 0.2 0.15"
+		"MaxLevel"	"7"
+		"AbilityCastPoint"	"0.35 0.30 0.25 0.20 0.15 0.10 0.05"
 		"AbilityCooldown"	"30"
-		"AbilityManaCost"	"50 60 70 80"
+		"AbilityManaCost"	"50 60 70 80 90 100 110"
 		"AbilitySpecial"
 		{
 			"01"
@@ -6593,18 +6703,18 @@
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"boar_hp_tooltip"	"200 300 400 500"
+				"boar_hp_tooltip"	"200 300 400 500 600 700 800"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"boar_damage_tooltip"	"20 30 40 50"
+				"boar_damage_tooltip"	"20 30 40 50 60 70 80"
 				"LinkedSpecialBonus"	"special_bonus_unique_beastmaster_2"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"boar_moveslow_tooltip"	"10 20 30 40"
+				"boar_moveslow_tooltip"	"10 20 30 40 50 60 70"
 			}
 			"05"
 			{
@@ -9053,6 +9163,31 @@
 		}
 	}
 
+	"life_stealer_ghoul_frenzy"
+	{
+		"MaxLevel" "7"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movement_slow"			"10 15 20 25 30 35 40"
+				"LinkedSpecialBonus"	"special_bonus_unique_lifestealer_6"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"1.5"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attack_speed_bonus"	"20 30 40 50 60 70 80"
+				"LinkedSpecialBonus"	"special_bonus_unique_lifestealer_7"
+			}
+		}
+	}
+
 	"life_stealer_infest"
 	{
 		"MaxLevel"	"7"
@@ -9385,23 +9520,34 @@
 	"clinkz_strafe"
 	{
 		"MaxLevel"	"7"
-		"AbilityCooldown"	"25"
-		"AbilityManaCost"	"90"
+		"AbilityChannelTime" "1.1 1.5 1.9 2.3 2.7 3.1 3.5"
+		"AbilityCooldown" "34 30 26 22 18 14 10"
+		"AbilityManaCost" "40 55 70 85 100 115 130"
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"					"3.0"
-				"LinkedSpecialBonus"		"special_bonus_unique_clinkz_2"
+				"var_type"					"FIELD_INTEGER"
+				"wave_count"				"2 3 4 5 6 7 8"
+				"LinkedSpecialBonus"		"special_bonus_unique_clinkz_12"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"attack_speed_bonus_pct"	"80 110 140 170 200 230 260"
+				"attack_speed_bonus_pct"	"90 120 150 180 210 240 270"
+				"LinkedSpecialBonus"		"special_bonus_unique_clinkz_7"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"range"						"650 700 750 800 850 900 950"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_pct"				"65"
 			}
 		}
-
 	}
 
 	"clinkz_searing_arrows"
@@ -9487,6 +9633,33 @@
 			{
 				"var_type"				"FIELD_FLOAT"
 				"spawn_interval"			"0.8"
+			}
+		}
+	}
+
+	"clinkz_death_pact"
+	{
+		"MaxLevel" "7"
+		"AbilityCooldown" "100 90 80 70 60 50 40"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"65"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"health_gain_pct"		"30 40 50 60 70 80 90"
+				"LinkedSpecialBonus"			"special_bonus_unique_clinkz_8"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_gain_pct"		"4 8 12 16 20 24 28"
+				"LinkedSpecialBonus"			"special_bonus_unique_clinkz_8"
+				"LinkedSpecialBonusField"		"value2"
 			}
 		}
 	}
@@ -9771,12 +9944,46 @@
 				"tooltip_hurt_attrib_bonus"	"22 30 38 46 54 62 70"
 			}
 		}
+	}
 
+	"huskar_inner_fire"
+	{
+		"MaxLevel" 						"7"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"100 170 240 310 380 450 520"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"500"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"disarm_duration"		"1.0 1.5 2.0 2.5 3.0 3.5 4.0"
+				"LinkedSpecialBonus"			"special_bonus_unique_huskar_3"
+
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"knockback_distance"	"400"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"knockback_duration"	"1"
+			}
+		}
 	}
 
 	"huskar_berserkers_blood"
 	{
-		"MaxLevel"	"7"
+		"MaxLevel"								"7"
 		"AbilitySpecial"
 		{
 			"01"
@@ -9993,14 +10200,14 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"damage"	"70 140 210 280 320 380 420"
+				"damage"	"200 350 500 650 800 950 1100"
 				"LinkedSpecialBonus"	"special_bonus_unique_broodmother_3"
 			}
 
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"count"	"1 1 2 2 3 4 5"
+				"count"	"1 2 3 4 5 6 7"
 			}
 
 			"05"
@@ -10116,6 +10323,46 @@
 
 	}
 
+	"broodmother_silken_bola"
+	{
+	"MaxLevel"  "7"
+	"AbilityCooldown" 		"28 25 22 19 16 13 10"
+	"AbilityManaCost" 		"70 75 80 85 90 95 100"
+	"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movement_speed"		"20 25 35 45 55 60 65"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"6"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"projectile_speed"	    "1200"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"impact_damage"			"100 120 140 160 180 200 220"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attack_damage"			"6 7 8 9 10 11 12"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"miss_chance"			"40"
+			}
+		}
+	}
+
 	"broodmother_incapacitating_bite"
 	{
 		"MaxLevel"	"7"
@@ -10123,20 +10370,20 @@
 		{
 			"01"
 			{
-				"var_type"	"FIELD_INTEGER"
-				"miss_chance"	"30 35 40 45 50 55 60"
+				"var_type"			"FIELD_INTEGER"
+				"miss_chance"		"30 35 40 45 50 55 60"
 			}
 
 			"02"
 			{
-				"var_type"	"FIELD_INTEGER"
+				"var_type"			"FIELD_INTEGER"
 				"bonus_movespeed"	"-16 -21 -26 -31 -36 -41 -46"
 			}
 
 			"03"
 			{
-				"var_type"	"FIELD_FLOAT"
-				"duration"	"2.0"
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"2.0"
 			}
 
 		}
@@ -10154,14 +10401,14 @@
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"bonus_damage"	"60 100 140 180 220 260 300"
+				"bonus_damage"	"30 60 90 120 150 180 210"
 				"LinkedSpecialBonus"	"special_bonus_unique_broodmother_1"
 			}
 
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"lifesteal_pct"	"60 80 100 120 140 160 180"
+				"lifesteal_pct"	"40 60 80 100 120 140 160"
 				"LinkedSpecialBonus"	"special_bonus_unique_broodmother_1"
 			}
 
@@ -11665,6 +11912,32 @@
 			{
 				"var_type"				"FIELD_FLOAT"
 				"vision_duration"		"0.94"
+			}
+		}
+	}
+
+	"spirit_breaker_bulldoze"
+	{
+		"MaxLevel" 						"7"
+		"AbilityCooldown" 				"24 22 20 18 16 14 12"
+		"AbilityManaCost" 				"30 40 50 60 70 80 90"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movement_speed"		"10 16 22 28 34 40 46"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"status_resistance"		"25 35 45 55 65 75 85"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"8"
 			}
 		}
 	}
@@ -13898,22 +14171,22 @@
 
 	"brewmaster_primal_split"
 	{
-		"MaxLevel"	"3"
-		"AbilityCooldown"	"160 120 100"
-		"AbilityCastPoint"	"0.2 0.2 0.1"
-		"AbilityManaCost"	"125 150 175"
+		"MaxLevel"	"7"
+		"AbilityCooldown"	"160 145 130 115 100 85 70"
+		"AbilityCastPoint"	"0.30 0.30 0.20 0.20 0.10 0.10 0.05 "
+		"AbilityManaCost"	"125 150 175 200 225 250 275"
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"duration"	"16 20 24"
+				"duration"	"16 18 20 22 24 26 28"
 			}
 
 			"02"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"split_duration"	"0.6 0.6 0.3"
+				"split_duration"	"0.9 0.8 0.7 0.6 0.5 0.4 0.3"
 			}
 
 		}
@@ -14616,6 +14889,63 @@
 		}
 	}
 
+	"treant_natures_grasp"
+	{
+		"MaxLevel" "7"
+		"AbilityCooldown"	"20 19 18 17 16 15 14"
+		"AbilityManaCost"	"70 80 90 100 110 120 130"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage_per_second"			"30 40 50 60 70 80 90"
+				"LinkedSpecialBonus"		"special_bonus_unique_treant_9"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"movement_slow"				"20 25 30 35 40 45 50"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"vines_duration"			"9 10 11 12 13 14 15"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"creation_interval"			"0.1"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"initial_latch_delay"		"0.3"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"vine_spawn_interval"		"175"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"latch_range"				"135"
+			}
+			"08"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"latch_vision"				"150"
+			}
+			"09"
+			{
+				"var_type" "FIELD_FLOAT"
+				"damage_from_current_health_pct" "0.1"
+				"CalculateSpellDamageTooltip" "0"
+			}
+		}
+	}
+
 	"treant_leech_seed"
 	{
 		"MaxLevel"	"7"
@@ -15070,22 +15400,22 @@
 	"undying_tombstone"
 	{
 		"NoAbandonCleanup" 	"1"
-		"MaxLevel"	"4"
+		"MaxLevel"	"7"
 		"AbilityCastRange"	"600"
-		"AbilityCastPoint"	"0.45 0.40 0.35 0.25"
-		"AbilityCooldown"	"70 60 50 40"
-		"AbilityManaCost"	"120 130 140 150"
+		"AbilityCastPoint"	"0.45 0.40 0.35 0.25 0.20 0.15 0.10"
+		"AbilityCooldown"	"90 80 70 60 50 40 30"
+		"AbilityManaCost"	"120 130 140 150 160 170 180"
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"tombstone_health"				"8 12 16 20"
+				"tombstone_health"		"4 8 12 16 20 24 28"
 			}
 			"02"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"hits_to_destroy_tooltip"				"4 6 8 10"
+				"var_type"					"FIELD_INTEGER"
+				"hits_to_destroy_tooltip"	"2 4 6 8 10 12 14"
 				"LinkedSpecialBonus"		"special_bonus_unique_undying_5"
 			}
 			"03"
@@ -15101,17 +15431,17 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"health_threshold"		"100 200 300 400"
+				"health_threshold"		"100 200 300 400 500 600 700"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"health_threshold_pct_tooltip"		"20 25 30 35"
+				"health_threshold_pct_tooltip"		"20 25 30 35 40 45 50"
 			}
 			"07"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"zombie_interval"		"4.5 4.0 3.5 3.0"
+				"zombie_interval"		"4.5 4.0 3.5 3.0 2.5 2.0 1.5"
 			}
 
 		}
@@ -15145,7 +15475,7 @@
 
 	"undying_tombstone_zombie_deathstrike"
 	{
-		"MaxLevel"	"4"
+		"MaxLevel"	"7"
 		"AbilitySpecial"
 		{
 			"01"
@@ -15156,12 +15486,12 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"health_threshold"	"100 200 300 400"
+				"health_threshold"	"100 200 300 400 500 600 700"
 			}
 			"03"
 			{
 				"var_type"	"FIELD_FLOAT"
-				"health_threshold_pct"	"20 25 30 35"
+				"health_threshold_pct"	"20 25 30 35 40 45 50"
 			}
 			"04"
 			{
@@ -22793,7 +23123,7 @@
 	{
 		"MaxLevel"	                    "7"
 		"AbilityCastRange"				"800"
-		"AbilityCooldown"				"24 20 16 12"
+		"AbilityCooldown"				"26 23 20 17 14 11"
 		"AbilityDuration"				"8"
 		"AbilityManaCost"				"90"
 		"AbilitySpecial"
@@ -22840,7 +23170,6 @@
 			}
 		}
 	}
-
 
 	"snapfire_gobble_up"
 	{
