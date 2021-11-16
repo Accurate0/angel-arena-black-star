@@ -658,7 +658,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"arrow_damage_pct"			"85 110 135 160"
+				"arrow_damage_pct"			"85 110 135 160 185 210 235"
 				"LinkedSpecialBonus"		"special_bonus_unique_drow_ranger_1"
 			}
 			"04"
@@ -2859,11 +2859,11 @@
 
 	"shadow_shaman_mass_serpent_ward"
 	{
-		"MaxLevel"	"3"
+		"MaxLevel"	"7"
 		"AbilityCastRange"	"550"
 		"AbilityCastPoint"	"0.3"
-		"AbilityCooldown"	"100 90 80"
-		"AbilityManaCost"	"200 350 500"
+		"AbilityCooldown"	"120 110 100 90 80 70 60"
+		"AbilityManaCost"	"200 350 500 650 800 950 1100"
 		"AbilitySpecial"
 		{
 			"01"
@@ -2874,7 +2874,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_tooltip"			"50 80 110"
+				"damage_tooltip"			"50 80 110 130 150 170 190"
 				"LinkedSpecialBonus"		"special_bonus_unique_shadow_shaman_4"
 				"CalculateSpellDamageTooltip"	"0"
 			}
@@ -2887,7 +2887,7 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"scepter_range"			"225"
-				"RequiresScepter"			"1"
+				"RequiresScepter"		"1"
 			}
 			"05"
 			{
@@ -5235,7 +5235,7 @@
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"focusfire_damage_reduction"	"-50 -40 -30 -20 -10 0 10"
+				"focusfire_damage_reduction"	"-60 -50 -40 -30 -20 -10 0"
 				"LinkedSpecialBonus"		"special_bonus_unique_windranger_8"
 			}
 			"03"
@@ -5984,6 +5984,37 @@
 
 	}
 
+	"tinker_defence_matrix"
+	{
+		"MaxLevel" "7"
+		"AbilityManaCost" "70 80 90 100 110 120 130"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage_absorb"		"100 180 240 320 400 480 560"
+				"LinkedSpecialBonus"	"special_bonus_unique_tinker_7"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"status_resistance"		"10 20 30 40 50 60 70"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"barrier_duration"		"15"
+			}
+		}
+	}
+
+	"tinker_keen_teleport"
+	{
+		"MaxLevel" "7"
+		"AbilityChannelTime" "5.0 4.5 4.0 3.5 3.0 2.5 2.0"
+	}
+
 	"tinker_laser"
 	{
 		"MaxLevel"	"7"
@@ -6724,6 +6755,74 @@
 		}
 	}
 
+	"beastmaster_call_of_the_wild_boar"
+	{
+		"MaxLevel" "7"
+		"AbilityCooldown" "46 42 38 34 30 26 22"
+		"AbilityManaCost" "60 65 70 75 80 85 90"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"duration"					"60 60 60 60 60 60 60"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"boar_hp_tooltip"			"200 300 400 500 600 700 800"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"boar_damage_tooltip"		"20 30 40 50 60 70 80"
+				"LinkedSpecialBonus"		"special_bonus_unique_beastmaster_2"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"boar_moveslow_tooltip"		"10 20 30 40 50 60 70"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"boar_poison_duration_tooltip"	"3.0"
+			}
+		}
+	}
+
+	"beastmaster_call_of_the_wild_hawk"
+	{
+		"MaxLevel" "7"
+		"AbilityCooldown" "70 60 50 40 30 20 10"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"				"60"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"hawk_hp_tooltip"			"150 200 250 300 350 400 450"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"hawk_speed_tooltip"		"300 340 380 420 460 500 540"
+				"LinkedSpecialBonus"		"special_bonus_unique_beastmaster_2"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"hawk_vision_tooltip"		"750 800 850 900 950 1000 1050"
+				"LinkedSpecialBonus"	"special_bonus_unique_beastmaster_5"
+			}
+		}
+
+	}
+
 	"beastmaster_inner_beast"
 	{
 		"MaxLevel"	"7"
@@ -7081,7 +7180,7 @@
 
 	"venomancer_plague_ward"
 	{
-		"MaxLevel"	"4"
+		"MaxLevel"	"7"
 		"AbilityCastRange"	"850"
 		"AbilityCastPoint"	"0"
 		"AbilityCooldown"	"5.0"
@@ -7097,7 +7196,7 @@
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"ward_hp_tooltip"	"75 200 325 450"
+				"ward_hp_tooltip"	"75 200 325 450 575 700 825"
 				"LinkedSpecialBonus"	"special_bonus_unique_venomancer"
 				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_MULTIPLY"
 			}
@@ -7105,7 +7204,7 @@
 			"03"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"ward_damage_tooltip"	"13 22 31 40"
+				"ward_damage_tooltip"	"13 22 31 40 49 58 67"
 				"LinkedSpecialBonus"	"special_bonus_unique_venomancer"
 				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_MULTIPLY"
 			}
@@ -7113,13 +7212,13 @@
 			"04"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"ward_hp"	"150 400 650 900"
+				"ward_hp"	"150 400 650 900 1150 1400 1650"
 			}
 
 			"05"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"ward_damage"	"26 44 62 80"
+				"ward_damage"	"26 44 62 80 98 116 134"
 			}
 
 		}
@@ -7400,8 +7499,8 @@
 
 	"pugna_nether_ward"
 	{
-		"MaxLevel"	"4"
-		"AbilityCastPoint"	"0.2 0.2 0.15 0.1"
+		"MaxLevel"	"7"
+		"AbilityCastPoint"	"0.4 0.35 0.30 0.25 0.20 0.15 0.1"
 		"AbilityCastRange"	"150"
 		"AbilityCooldown"	"35.0"
 		"AbilityDuration"	"30"
@@ -7418,24 +7517,24 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"base_damage"			"50"
+				"base_damage"				"50"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"mana_multiplier"			"1.0 1.25 1.50 1.75"
+				"mana_multiplier"			"1.0 1.25 1.50 1.75 2.00 2.25 2.50"
 				"LinkedSpecialBonus"		"special_bonus_unique_pugna_3"
 			}
 			"04"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"mana_regen"				"-0.3 -0.6 -0.9 -1.2"
+				"mana_regen"				"-0.3 -0.6 -0.9 -1.2 -1.5 -1.8 -2.1"
 			}
 			"05"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"attacks_to_destroy_tooltip"				"4"
-				"LinkedSpecialBonus"		"special_bonus_unique_pugna_6"
+				"var_type"						"FIELD_INTEGER"
+				"attacks_to_destroy_tooltip"	"4"
+				"LinkedSpecialBonus"			"special_bonus_unique_pugna_6"
 			}
 		}
 	}
@@ -8973,22 +9072,22 @@
 
 	"furion_force_of_nature"
 	{
-		"MaxLevel"	"4"
+		"MaxLevel"	"7"
 		"AbilityCastRange"				"750"
 		"AbilityCastPoint"				"0.5"
 		"AbilityCooldown"				"37"
-		"AbilityManaCost"				"130 140 150 160"
+		"AbilityManaCost"				"130 140 150 160 170 180 190"
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"area_of_effect"		"150 225 300 375"
+				"area_of_effect"		"150 225 300 375 450 525 600"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"max_treants"			"2 3 4 5"
+				"max_treants"			"2 3 4 5 6 7 8"
 				"LinkedSpecialBonus"	"special_bonus_unique_furion_2"
 			}
 			"03"
@@ -9006,7 +9105,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"treant_dmg_tooltip"				"24 28 32 36"
+				"treant_dmg_tooltip"				"24 28 32 36 40 44 48"
 				"LinkedSpecialBonus"	"special_bonus_unique_furion"
 				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_MULTIPLY"
 
@@ -9019,7 +9118,7 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"treant_damage_bonus"		"24 28 32 36"
+				"treant_damage_bonus"		"24 28 32 36 40 44 48"
 			}
 			"08"
 			{
@@ -9030,7 +9129,7 @@
 			"09"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"treant_large_damage_bonus"		"72 84 96 108"
+				"treant_large_damage_bonus"		"72 84 96 108 120 132 144"
 				"RequiresScepter"		"1"
 			}
 		}
@@ -13537,54 +13636,48 @@
 
 	"obsidian_destroyer_astral_imprisonment"
 	{
-		"MaxLevel"	"7"
-		"AbilityDuration"	"4.0"
-		"AbilityCooldown"	"20"
-		"AbilityCastRange"	"225 300 375 450 525 600 675"
-		"AbilityCastPoint"	"0.25 0.25 0.25 0.25 0.25 0.15 0.1"
-		"AbilityManaCost"	"120 140 160 180 200 220 240"
-		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_DARK"
-
+		"MaxLevel" "7"
+		"AbilityCooldown" "32 28 24 20 16 12 8"
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"prison_duration"		"4.0"
+				"prison_duration"		"2.5 2.75 3.0 3.25 3.50 3.75 4.00 "
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"100 175 250 325 425 550 650"
+				"damage"				"120 200 280 360 440 520 600"
 				"LinkedSpecialBonus"	"special_bonus_unique_outworld_devourer_3"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"radius"		"400"
+				"max_charges_scepter"	"2"
+				"RequiresScepter"		"1"
 			}
 			"04"
 			{
-				"var_type"			"FIELD_INTEGER"
-				"max_charges_scepter"		"2"
-				"RequiresScepter"			"1"
+				"var_type"							"FIELD_INTEGER"
+				"charge_restore_time_scepter"		"12"
+				"RequiresScepter"					"1"
 			}
 			"05"
 			{
-				"var_type"			"FIELD_INTEGER"
-				"charge_restore_time_scepter"		"12"
-				"RequiresScepter"			"1"
+				"var_type"				"FIELD_INTEGER"
+				"scepter_range_bonus"	"0"
+				"RequiresScepter"		"1"
 			}
 			"06"
 			{
-				"var_type"			"FIELD_INTEGER"
-				"scepter_range_bonus"	"300"
-				"RequiresScepter"			"1"
+				"var_type"				"FIELD_INTEGER"
+				"mana_capacity_steal"	"16 18 20 22 24 26 28"
 			}
 			"07"
 			{
-				"var_type"			"FIELD_INTEGER"
-				"counter_duration"	"35"
+				"var_type"					"FIELD_FLOAT"
+				"mana_capacity_duration"	"30 40 50 60 70 80 90"
 			}
 		}
 	}
@@ -13671,6 +13764,60 @@
 			{
 				"var_type"			"FIELD_INTEGER"
 				"counter_duration"	"35"
+			}
+		}
+	}
+
+	"lycan_summon_wolves"
+	{
+		"MaxLevel" "7"
+		"AbilityCooldown" "36 34 32 30 28 26 24"
+		"AbilityManaCost" "125 130 135 140 145 150 155"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"wolf_index"				"1 2 3 4 5 6 7"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"wolf_duration"				"50"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"wolf_bat"					"1.2 1.1 1.0 0.9 0.8 0.7 0.6"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"wolf_damage"				"26 34 42 50 58 66 72"
+				"LinkedSpecialBonus"	"special_bonus_unique_lycan_6"
+
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"wolf_hp"					"325 375 425 475 525 575 625"
+				"LinkedSpecialBonus"	"special_bonus_unique_lycan_7"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bash_chance"				"15"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"bash_duration"				"1.0"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tooltip_wolf_count"			"2 2 2 2 2 2 2"
+				"LinkedSpecialBonus"	"special_bonus_unique_lycan_2"
 			}
 		}
 	}
@@ -13775,6 +13922,7 @@
 			}
 		}
 	}
+
 	"lone_druid_spirit_bear"
 	{
 		"MaxLevel"	"4"
@@ -13822,6 +13970,25 @@
 
 		}
 
+	}
+
+	"lone_druid_spirit_link"
+	{
+		"MaxLevel" "7"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_attack_speed"		"16 34 52 70 88 106 124"
+				"LinkedSpecialBonus"	"special_bonus_unique_lone_druid_6"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"lifesteal_percent"			"20 30 40 50 60 70 80"
+			}
+		}
 	}
 
 	"lone_druid_savage_roar"
@@ -16462,6 +16629,36 @@
 		}
 	}
 
+	"keeper_of_the_light_spirit_form"
+	{
+		"MaxLevel" "7"
+		"AbilityManaCost" "75 125 175 225 275 325 375"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"40.0 40.0 40.0 40.0 40.0 40.0 40.0"
+				"LinkedSpecialBonus"		"special_bonus_unique_keeper_of_the_light_11"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"movement_speed"			"15 20 25 30 35 40 45"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"cast_range"				"125 250 375 500 625 750 875"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"illuminate_heal"			"40 50 60 70 80 90 100"
+			}
+		}
+	}
+
 	"keeper_of_the_light_will_o_wisp"
 	{
 		"MaxLevel"	"7"
@@ -16670,21 +16867,21 @@
 
 	"visage_summon_familiars"
 	{
-		"MaxLevel"	"3"
+		"MaxLevel"	"7"
 		"AbilityCastPoint"	"0"
-		"AbilityCooldown"	"100 80 60"
+		"AbilityCooldown"	"140 120 100 80 60 40"
 		"AbilityManaCost"	"150"
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"familiar_hp"	"400 550 700"
+				"familiar_hp"	"400 550 700 850 1000 1150 1300"
 			}
 			"02"
 			{
 				"var_type"	"FIELD_INTEGER"
-				"familiar_armor"	"1 7 16"
+				"familiar_armor"	"1 7 16 28 43 61 82"
 			}
 			"03"
 			{
@@ -16695,7 +16892,7 @@
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"familiar_attack_damage"	"20 35 50"
+				"familiar_attack_damage"	"20 35 50 65 80 95 110"
 			}
 
 		}
