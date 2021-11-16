@@ -1145,4 +1145,14 @@
 	{
 		"override_hero"	"npc_dota_hero_void_spirit"
 	}
+
+	"npc_dota_hero_marci"
+	{
+		"override_hero"	"npc_dota_hero_marci"
+	}
+
+    "npc_dota_hero_hoodwink"
+	{
+		"override_hero"	"npc_dota_hero_hoodwink"
+	}
 }

@@ -22548,16 +22548,17 @@
 
 	"snapfire_scatterblast"
 	{
+		"MaxLevel"						"7"
 		"AbilityCastRange"				"800"
 		"AbilityCastPoint"				"0.4"
 		"AbilityCooldown"				"10.0"
-		"AbilityManaCost"				"80 90 100 110"
+		"AbilityManaCost"				"80 90 100 110 130 150 170"
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"80 150 220 290"
+				"damage"					"80 150 220 290 360 430 500"
 				"LinkedSpecialBonus"		"special_bonus_unique_snapfire_7"
 			}
 			"02"
@@ -22595,14 +22596,21 @@
 				"var_type"					"FIELD_FLOAT"
 				"point_blank_dmg_bonus_pct"	"50.0"
 			}
+			"99"
+			{
+				"var_type" "FIELD_FLOAT"
+				"damage_from_current_health_pct" "0.75 1.50 3.25 4.00 4.75 5.50"
+				"CalculateSpellDamageTooltip" "0"
+			}
 		}
 	}
 
 	"snapfire_mortimer_kisses"
 	{
+		"MaxLevel"						"7"
 		"AbilityCooldown"				"90"
 		"AbilityDuration"				"6.0"
-		"AbilityManaCost"				"125 150 175"
+		"AbilityManaCost"				"125 150 175 200 225 250 275"
 
 		"AbilitySpecial"
 		{
@@ -22630,7 +22638,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_per_impact"		"200 300 400"
+				"damage_per_impact"		"200 300 400 500 600 700 800"
 			}
 			"06"
 			{
@@ -22655,7 +22663,7 @@
 			"10"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"burn_damage"			"50 75 100"
+				"burn_damage"			"50 75 100 125 150 175 200"
 			}
 			"11"
 			{
@@ -22698,14 +22706,21 @@
 				"var_type"				"FIELD_FLOAT"
 				"burn_linger_duration"	"1.0"
 			}
+			"99"
+			{
+				"var_type" "FIELD_FLOAT"
+				"damage_from_current_health_pct" "0.10 0.20 0.30 0.40 0.50 0.60 0.70"
+				"CalculateSpellDamageTooltip" "0"
+			}
 		}
 	}
 
 	"snapfire_firesnap_cookie"
 	{
+		"MaxLevel"	                    "7"
 		"AbilityCastRange"				"700"
 		"AbilityCastPoint"				"0.2"
-		"AbilityCooldown"				"24 21 18 15"
+		"AbilityCooldown"				"24 22 20 18 16 14 12"
 		"AbilityManaCost"				"100"
 
 		"AbilitySpecial"
@@ -22723,17 +22738,17 @@
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"jump_duration"			"0.484" //"0.431 0.484 0.538 0.592" // proportional to horizontal distance
+				"jump_duration"			"0.484" //"0.431 0.484 0.538 0.592 0.621 0.689 0.720" // proportional to horizontal distance
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"jump_height"			"257" //"228 257 285 314" // proportional to horizontal distance
+				"jump_height"			"257" //"228 257 285 314 330 350 370" // proportional to horizontal distance
 			}
 			"05"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"jump_horizontal_distance"	"450" //"400 450 500 550"
+				"jump_horizontal_distance"	"450" //"400 450 500 550 600 650 700"
 			}
 			"06"
 			{
@@ -22753,23 +22768,30 @@
 			"09"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"impact_damage"			"90 160 230 300"
+				"impact_damage"			"90 160 230 300 370 440 510"
 			}
 			"10"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"impact_stun_duration"	"1.6 1.9 2.2 2.5"
+				"impact_stun_duration"	"1.6 1.9 2.2 2.5 2.8 3.1 3.4"
 			}
 			"11"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"self_cast_delay"		"0.3"
 			}
+			"99"
+			{
+				"var_type" "FIELD_FLOAT"
+				"damage_from_current_health_pct" "0.50 1.00 1.50 2.00 2.50 3.00 3.50"
+				"CalculateSpellDamageTooltip" "0"
+			}
 		}
 	}
 
 	"snapfire_lil_shredder"
 	{
+		"MaxLevel"	                    "7"
 		"AbilityCastRange"				"800"
 		"AbilityCooldown"				"24 20 16 12"
 		"AbilityDuration"				"8"
@@ -22779,7 +22801,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"40 55 70 85"
+				"damage"					"40 55 70 85 100 115 130"
 			}
 			"02"
 			{
@@ -22794,7 +22816,7 @@
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"attack_range_bonus"		"75 150 225 300"
+				"attack_range_bonus"		"75 150 225 300 375 450 525"
 			}
 			"05"
 			{
@@ -22809,7 +22831,7 @@
 			"07"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"attack_speed_slow_per_stack"	"15 20 25 30"
+				"attack_speed_slow_per_stack"	"15 20 25 30 35 40 45"
 			}
 			"08"
 			{
@@ -22819,11 +22841,176 @@
 		}
 	}
 
+
+	"snapfire_gobble_up"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"6484"	// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_CUSTOM"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_CUSTOM"
+		"MaxLevel"						"1"
+		"FightRecapLevel"				"1"
+		"IsGrantedByScepter"			"1"
+		"HasScepterUpgrade"				"1"
+		"AbilitySound"					"Hero_Snapfire.GobbleUp.Cast"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.3"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"150"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"150"
+		"AbilityCooldown"				"40"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"max_time_in_belly"		"3.0"
+				"RequiresScepter"		"1"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+
+	"snapfire_spit_creep"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"6486"	// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_MOVEMENT | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"MaxLevel"						"1"
+		"FightRecapLevel"				"1"
+		"IsGrantedByScepter"			"1"
+		"AbilitySound"					"Hero_Snapfire.MortimerBlob.Launch"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"3000"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+		// Damage
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"0"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"projectile_speed"		"1400"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"projectile_width"		"130"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"impact_radius"			"400"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"projectile_vision"		"500"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"burn_interval"			"0.5"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"burn_damage"			"100"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"move_slow_pct"			"25"
+				"LinkedSpecialBonus"	"special_bonus_unique_snapfire_4"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"burn_ground_duration"	"3.0"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"min_range"				"0" //"600"
+			}
+			"11"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"min_lob_travel_time"	"0.1"
+			}
+			"12"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"max_lob_travel_time"	"2.0"
+			}
+			"13"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"burn_linger_duration"	"1.0"
+			}
+			"14"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"1.5"
+			}
+			"15"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"min_height_above_lowest"	"150.0"
+			}
+			"16"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"min_height_above_highest"	"100.0"
+			}
+			"17"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"min_acceleration"		"1000.0"
+			}
+			"18"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"max_acceleration"		"2000.0"
+			}
+		}
+	}
+
 	"void_spirit_aether_remnant"
 	{
+		"MaxLevel"	                    "7"
 		"AbilityCastRange"				"1000"
-		"AbilityCooldown"				"17.0 15.0 13.0 11.0"
-		"AbilityManaCost"				"85 90 95 100"
+		"AbilityCooldown"				"17.0 16.0 15.0 14.0 13.0 12.0 11.0"
+		"AbilityManaCost"				"85 90 95 100 105 110 115"
 		"AbilitySpecial"
 		{
 			"01"
@@ -22869,17 +23056,17 @@
 			"09"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"impact_damage"			"80 130 180 230"
+				"impact_damage"			"80 130 180 230 280 330 380"
 			}
 			"10"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"pull_duration"			"1.2 1.4 1.6 1.8"
+				"pull_duration"			"1.2 1.4 1.6 1.8 2.0 2.2 2.4"
 			}
 			"11"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"pull_destination"		"44 50 56 62"
+				"pull_destination"		"44 50 56 62 68 74 80"
 			}
 			"12"
 			{
@@ -22896,10 +23083,11 @@
 
 	"void_spirit_dissimilate"
 	{
+		"MaxLevel"						"7"
 		"AbilityCastPoint"				"0.2"
-		"AbilityCooldown"				"20 17 14 11"
-		"AbilityDamage"					"100 180 260 340"
-		"AbilityManaCost"				"100 110 120 130"
+		"AbilityCooldown"				"20 18 16 14 12 10"
+		"AbilityDamage"					"100 180 260 340 420 500 580"
+		"AbilityManaCost"				"100 110 120 130 140 150 160"
 		"AbilitySpecial"
 		{
 			"01"
@@ -22932,14 +23120,21 @@
 				"var_type"				"FIELD_INTEGER"
 				"damage_radius"			"275" // proportional to distance_offset
 			}
+			"99"
+			{
+				"var_type" "FIELD_FLOAT"
+				"damage_from_current_health_pct" "0.10 0.20 0.30 0.40 0.50 0.60 0.70"
+				"CalculateSpellDamageTooltip" "0"
+			}
 		}
 	}
 
 	"void_spirit_astral_step"
 	{
+		"MaxLevel" 						"7"
 		"AbilityCastPoint"				"0.2"
 		"AbilityCooldown"				"0"
-		"AbilityManaCost"				"80 90 100"
+		"AbilityManaCost"				"80 90 100 110 120 130 140"
 		"AbilitySpecial"
 		{
 			"01"
@@ -22956,7 +23151,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"charge_restore_time"	"25 20 15"
+				"charge_restore_time"	"30 27 24 21 18 15 12"
 				"LinkedSpecialBonus"	"special_bonus_unique_void_spirit_1"
 			}
 			"04"
@@ -22967,7 +23162,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"max_travel_distance"	"700 900 1100"
+				"max_travel_distance"	"500 600 700 800 900 1000 1100"
 			}
 			"06"
 			{
@@ -22977,20 +23172,27 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"pop_damage"			"150 200 250"
+				"pop_damage"			"150 200 250 300 350 400 450"
 			}
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"movement_slow_pct"		"40 60 80"
 			}
+			"99"
+			{
+				"var_type" "FIELD_FLOAT"
+				"damage_from_current_health_pct" "0.25 0.50 0.75 1.00 1.25 1.50 1.75"
+				"CalculateSpellDamageTooltip" "0"
+			}
 		}
 	}
 
 	"void_spirit_resonant_pulse"
 	{
+		"MaxLevel"						"7"
 		"AbilityCooldown"				"16"
-		"AbilityManaCost"				"100 110 120 130"
+		"AbilityManaCost"				"100 110 120 130 140 150 160"
 		"AbilitySpecial"
 		{
 			"01"
@@ -23006,7 +23208,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"70 120 170 220"
+				"damage"				"70 120 170 220 270 320 370"
 				"LinkedSpecialBonus"	"special_bonus_unique_void_spirit_4"
 			}
 			"04"
@@ -23017,12 +23219,12 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"base_absorb_amount"	"40 80 120 160"
+				"base_absorb_amount"	"40 80 120 160 200 240 280"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"absorb_per_hero_hit"	"30 45 60 75"
+				"absorb_per_hero_hit"	"30 45 60 75 90 105 120"
 			}
 			"07"
 			{
