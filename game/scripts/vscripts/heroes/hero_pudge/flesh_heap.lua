@@ -1,6 +1,6 @@
 function IncreaseAbilityStacks(unit, ability)
 	ModifyStacks(ability, unit, unit, "modifier_pudge_flesh_heap_arena_stack", 1, false)
-	unit:CalculateStatBonus()
+	unit:CalculateStatBonus(true)
 	local oldAbilityModelScale = ability.AdditionalModelScale or 0
 	ability.AdditionalModelScale = math.min(ability:GetAbilitySpecial("model_scale_per_stack") * unit:GetModifierStackCount("modifier_pudge_flesh_heap_arena_stack", unit), ability:GetAbilitySpecial("model_scale_max"))
 	unit:SetModelScale(unit:GetModelScale() + ability.AdditionalModelScale - oldAbilityModelScale)

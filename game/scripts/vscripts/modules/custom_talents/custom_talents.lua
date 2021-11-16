@@ -257,6 +257,6 @@ function CDOTA_BaseNPC:ApplyTalentEffects(name)
 		end
 	end
 	if effect.calculate_stat_bonus and self.CalculateStatBonus then
-		self:CalculateStatBonus()
+		self:CalculateStatBonus(true)
 	end
 end

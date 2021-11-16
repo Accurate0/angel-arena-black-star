@@ -198,7 +198,7 @@ function CDOTA_BaseNPC_Hero:GetTotalHealthReduction()
 end
 
 function CDOTA_BaseNPC_Hero:CalculateHealthReduction()
-	self:CalculateStatBonus()
+	self:CalculateStatBonus(true)
 	local pct = self:GetTotalHealthReduction()
 	self:SetMaxHealth(pct >= 100 and 1 or self:GetMaxHealth() - pct * (self:GetMaxHealth()/100))
 end

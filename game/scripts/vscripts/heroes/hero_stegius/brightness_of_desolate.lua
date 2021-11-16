@@ -1,6 +1,6 @@
 function OnBuffDestroy(keys)
 	if keys.target:IsHero() then
-		keys.target:CalculateStatBonus()
+		keys.target:CalculateStatBonus(true)
 	end
 end
 

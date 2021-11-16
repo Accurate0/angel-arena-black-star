@@ -79,7 +79,7 @@ function TransformUnitClass(unit, classTable, skipAbilityRemap)
 	if not skipAbilityRemap then
 		for i = 0, unit:GetAbilityCount() - 1 do
 			if unit:GetAbilityByIndex(i) then
-				unit:RemoveAbility(unit:GetAbilityByIndex(i):GetName())
+				unit:RemoveAbility(unit:GetAbilityByIndex(i):GetAbilityName())
 			end
 		end
 		if Options:IsEquals("EnableAbilityShop", false) and Options:IsEquals("EnableRandomAbilities", false) then
@@ -120,7 +120,7 @@ function TransformUnitClass(unit, classTable, skipAbilityRemap)
 		elseif key == "AttributePrimary" then
 			Timers:NextTick(function()
 				unit:SetPrimaryAttribute(_G[value])
-				unit:CalculateStatBonus()
+				unit:CalculateStatBonus(true)
 
 				local illusionParent = unit:GetIllusionParent()
 				if IsValidEntity(illusionParent) then

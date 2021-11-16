@@ -6,8 +6,8 @@ function Devour( keys )
 
 	ability:ApplyDataDrivenModifier(caster, caster, "modifier_doom_bringer_devour_arena", nil)
 	caster:SetModifierStackCount("modifier_doom_bringer_devour_arena", caster, target:GetMaxHealth() * ability:GetLevelSpecialValueFor("stolen_health_pct", ability:GetLevel() - 1) * 0.01)
-	caster:CalculateStatBonus()
-	
+	caster:CalculateStatBonus(true)
+
 	local gold = math.max(ability:GetLevelSpecialValueFor("min_bonus_gold", ability:GetLevel() - 1), ((target:GetMinimumGoldBounty() + target:GetMaximumGoldBounty()) / 2) * ability:GetLevelSpecialValueFor("bonus_gold_pct", ability:GetLevel() - 1) * 0.01)
 	Gold:AddGoldWithMessage(caster, gold)
 
