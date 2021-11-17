@@ -6,7 +6,7 @@ function GetCommandName(name) {
 }
 
 function GetKeyBind(name) {
-  $.CreatePanelWithProperties("DOTAHotkey", contextPanel, "", { keybind: name });
+  $.CreatePanelWithProperties('DOTAHotkey', contextPanel, '', { keybind: name });
   var keyElement = contextPanel.GetChild(contextPanel.GetChildCount() - 1);
   keyElement.DeleteAsync(0);
   return keyElement.GetChild(0).text;
