@@ -126,6 +126,7 @@
 
 		"npc_dota_hero_marci"							"1"
 		"npc_dota_hero_hoodwink"						"1"
+		"npc_dota_hero_dawnbreaker" 					"1"
 
 		"npc_arena_hero_arthas"							"1"
 		"npc_arena_hero_stargazer"						"1"
@@ -273,6 +274,7 @@
 
 		"npc_dota_hero_marci"							"1"
 		"npc_dota_hero_hoodwink"						"1"
+		"npc_dota_hero_dawnbreaker" 					"1"
 
 		"npc_arena_hero_shinobu"						"1"
 		"npc_arena_hero_stegius"						"1"
