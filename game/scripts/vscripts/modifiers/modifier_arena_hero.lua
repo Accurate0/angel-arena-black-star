@@ -30,24 +30,8 @@ function modifier_arena_hero:GetModifierMagicalResistanceDirectModification()
 end
 
 if IsServer() then
-	local function critGetModifierDamageOutgoing_Percentage(self)
-		return self.agilityCriticalDamage - 100
-	end
-
-	local function critGetModifierPreAttack_CriticalStrike()
-		return 100.0001 -- if it is 100 the crit overhead won't show
-	end
-
 	function modifier_arena_hero:OnAttackStart(keys)
 		if keys.attacker ~= self:GetParent() then return end
-
-		if RollPercentage(15) then
-			self.GetModifierDamageOutgoing_Percentage = critGetModifierDamageOutgoing_Percentage
-			self.GetModifierPreAttack_CriticalStrike = critGetModifierPreAttack_CriticalStrike
-		else
-			self.GetModifierDamageOutgoing_Percentage = nil
-			self.GetModifierPreAttack_CriticalStrike = nil
-		end
 	end
 
 	modifier_arena_hero.HeroLevel = 1
