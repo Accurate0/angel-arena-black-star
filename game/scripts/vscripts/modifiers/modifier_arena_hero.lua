@@ -92,51 +92,6 @@ if IsServer() then
 			self.VisibleAbilitiesCount = VisibleAbilitiesCount
 			self:SetSharedKey("VisibleAbilitiesCount", VisibleAbilitiesCount)
 		end
-
-		local function calculateResistanceFromStrength(str) return str * 0.08 * 0.01 end
-		local strength = parent:GetStrength()
-		local strengthResistance = calculateResistanceFromStrength(strength)
-		if strengthResistance == 1 then
-			if not self.strengthBorrowed then
-				self.strengthBorrowed = true
-				parent:ModifyStrength(-1)
-				strength = strength - 1
-			else
-				self.strengthBorrowed = false
-				parent:ModifyStrength(1)
-				strength = strength + 1
-			end
-			strengthResistance = calculateResistanceFromStrength(strength)
-		elseif self.strengthBorrowed and calculateResistanceFromStrength(strength + 1) ~= 1 then
-			self.strengthBorrowed = false
-			parent:ModifyStrength(1)
-		end
-
-		local baseFactor = 100 - parent:GetBaseMagicalResistanceValue()
-		local resistanceDifference = baseFactor / (strengthResistance - 1) + baseFactor
-		if self.resistanceDifference ~= resistanceDifference then
-			self.resistanceDifference = resistanceDifference
-			self:SetSharedKey("resistanceDifference", resistanceDifference)
-		end
-
-		local agilityArmor = parent:GetAgility() * 0.16
-		local idealArmor = CalculateBaseArmor(parent:GetIntellect())
-		if self.idealArmor ~= idealArmor then
-			self.idealArmor = idealArmor
-			parent:SetNetworkableEntityInfo("IdealArmor", idealArmor)
-		end
-
-		local armorDifference = idealArmor - agilityArmor
-		if parent.armorDifference ~= armorDifference then
-			parent.armorDifference = armorDifference
-			parent:SetPhysicalArmorBaseValue(parent:GetKeyValue("ArmorPhysical") + armorDifference)
-		end
-
-		local agilityCriticalDamage = 100 + parent:GetAgility() * 0.02
-		if self.agilityCriticalDamage ~= agilityCriticalDamage then
-			self.agilityCriticalDamage = agilityCriticalDamage
-			parent:SetNetworkableEntityInfo("AgilityCriticalDamage", agilityCriticalDamage)
-		end
 	end
 
 	function modifier_arena_hero:OnDeath(k)
