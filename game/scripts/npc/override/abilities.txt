@@ -7225,54 +7225,70 @@
 
 	}
 
-	"venomancer_poison_nova"
+"venomancer_poison_nova"
 	{
-		"MaxLevel"	"7"
-		"AbilityCooldown"	"100 95 90 85 80 75 70"
-		"AbilityManaCost"	"100 200 300 400 500 600 700"
-		"AbilityUnitDamageSubType"	"DAMAGE_SUBTYPE_EARTH"
+		"ID"					"5181"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"2"
+		"AbilitySound"					"Hero_Venomancer.PoisonNova"
+		"MaxLevel"						"7"
+
+		"HasScepterUpgrade"				"1"
+
+		"AbilityCastPoint"				"0.0 0.0 0.0"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_4"
+
+		"AbilityCooldown"				"140.0 120.0 100.0 90.0 80.0 70.0 60.0 50.0"
+
+		"AbilityManaCost"				"200 300 400 500 600 700 800"
+
+		"AbilityModifierSupportValue"	"0.0"
 
 		"AbilitySpecial"
 		{
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"radius"					"830"
+				"radius"					"885"
 				"LinkedSpecialBonus"		"special_bonus_unique_venomancer_6"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"start_radius"				"255"
+				"start_radius"				"255 255 255"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"					"18"
+				"duration"					"20"
 				"LinkedSpecialBonus"		"special_bonus_unique_venomancer_4"
 			}
 			"04"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"damage"					"40 80 120 160 220 280 360"
+				"var_type"					"FIELD_FLOAT"
+				"damage"					"0.5 0.75 1.0 1.25 1.5 1.75 2.0"
 			}
 			"05"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"cooldown_scepter"			"90 80 70 60 50 40 30"
+				"cooldown_scepter"			"100.0 80.0 60.0 50.0 40.0 30.0 20.0"
 				"RequiresScepter"		"1"
 			}
 			"06"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration_scepter"			"18"
+				"duration_scepter"			"20"
 				"LinkedSpecialBonus"		"special_bonus_unique_venomancer_4"
 				"RequiresScepter"		"1"
 			}
 			"07"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"damage_scepter"			"75 125 195 285 375 465 555"
+				"var_type"					"FIELD_FLOAT"
+				"damage_scepter"			"1.5 1.75 2.0 2.25 2.5 2.75 3.0"
 				"RequiresScepter"		"1"
 			}
 			"08"
@@ -7280,11 +7296,10 @@
 				"var_type"					"FIELD_INTEGER"
 				"speed"						"500"
 			}
-			"99"
+			"09"
 			{
-				"var_type" "FIELD_FLOAT"
-				"damage_from_current_health_pct" "0.25 0.5 0.75 1.0 1.25 1.5 1.75"
-				"CalculateSpellDamageTooltip" "0"
+				"var_type"					"FIELD_FLOAT"
+				"base_damage"					"20 30 40 50 60 70 80"
 			}
 		}
 	}
