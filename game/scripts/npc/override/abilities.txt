@@ -7791,18 +7791,27 @@
 			{
 				"var_type"	"FIELD_INTEGER"
 				"bonus_attack_range"	"100 140 180 220 260 300 340"
+				"LinkedSpecialBonus"		"special_bonus_unique_templar_assassin_8"
 			}
-
 			"02"
 			{
-				"var_type"	"FIELD_INTEGER"
-				"attack_spill_range"	"590 620 650 680 710 740 770"
+				"var_type"					"FIELD_FLOAT"
+				"attack_spill_range"		"1.5"
 			}
-
 			"03"
 			{
-				"var_type"	"FIELD_INTEGER"
-				"attack_spill_width"	"140"
+				"var_type"					"FIELD_INTEGER"
+				"attack_spill_width"		"90"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"attack_spill_pct"			"20 35 50 65 80 90 100"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"attack_spill_penalty"			"5"
 			}
 		}
 	}
