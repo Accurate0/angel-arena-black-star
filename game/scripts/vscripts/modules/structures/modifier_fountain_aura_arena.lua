@@ -22,7 +22,7 @@ if IsServer() then
 	end
 
 	function modifier_fountain_aura_arena:OnDestroy()
-		self:GetParent():RemoveModifierByName("modifier_fountain_aura_invulnerability")
+		self:GetParent():RemoveModifierByName("modifier_fountain_invulnerability")
 	end
 
 	function modifier_fountain_aura_arena:OnIntervalThink()
@@ -32,11 +32,11 @@ if IsServer() then
 		end
 
 		local isBossAlive = Bosses:IsAlive("cursed_zeld")
-		local hasMod = parent:HasModifier("modifier_fountain_aura_invulnerability")
+		local hasMod = parent:HasModifier("modifier_fountain_invulnerability")
 		if isBossAlive and not hasMod then
-			parent:AddNewModifier(parent, nil, "modifier_fountain_aura_invulnerability", nil)
+			parent:AddNewModifier(parent, nil, "modifier_fountain_invulnerability", nil)
 		elseif not isBossAlive and hasMod then
-			parent:RemoveModifierByName("modifier_fountain_aura_invulnerability")
+			parent:RemoveModifierByName("modifier_fountain_invulnerability")
 		end
 
 		if parent:IsCourier() then return end

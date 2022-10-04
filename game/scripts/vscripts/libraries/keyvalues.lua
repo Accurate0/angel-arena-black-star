@@ -216,6 +216,8 @@ function GetAbilitySpecial(name, key, level, t)
 				return o
 			end
 		end
+
+		return {}
 	end
 end
 

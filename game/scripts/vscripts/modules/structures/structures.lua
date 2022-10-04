@@ -6,7 +6,7 @@ ModuleRequire(..., "shops")
 ModuleLinkLuaModifier(..., "modifier_arena_healer")
 ModuleLinkLuaModifier(..., "modifier_arena_courier")
 ModuleLinkLuaModifier(..., "modifier_fountain_aura_arena")
-ModuleLinkLuaModifier(..., "modifier_fountain_aura_invulnerability", "modifier_fountain_aura_arena")
+ModuleLinkLuaModifier(..., "modifier_fountain_invulnerability", "modifier_fountain_aura_arena")
 ModuleLinkLuaModifier(..., "modifier_fountain_aura_enemy")
 
 Events:Register("activate", function ()

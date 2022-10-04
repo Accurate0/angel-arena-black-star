@@ -153,7 +153,7 @@ function GameMode:DamageFilter(filterTable)
 		if IsValidEntity(inflictor) and inflictor.GetAbilityName then
 			local inflictorname = inflictor:GetAbilityName()
 			local damage_from_current_health_pct = inflictor:GetAbilitySpecial("damage_from_current_health_pct")
-			if victim and damage_from_current_health_pct then
+			if victim and next(damage_from_current_health_pct) ~= nil then
 				if PERCENT_DAMAGE_MODIFIERS[inflictorname] then
 					damage_from_current_health_pct = damage_from_current_health_pct * PERCENT_DAMAGE_MODIFIERS[inflictorname]
 				end
